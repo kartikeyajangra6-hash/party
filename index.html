@@ -1,110 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> Forbidden Paradise </title>
-    <link rel="stylesheet" href="index.css"> 
 
-  </head>
-  <body>
-    <nav class="navbar">
-  <div class="logo">
-    
-     <img src="dugem-logos.png" alt="logo"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forbidden Paradise | Chandigarh's Private Party Experience</title>
+  <meta name="description"
+    content="Forbidden Paradise - Where strangers become stories. Chandigarh's most curated house party experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Animated Background Layers -->
+  <div class="bg-container">
+    <div class="gradient-bg"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
   </div>
 
-  <ul class="nav-links">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="#">Experience</a></li>
-    <li><a href="#">Rules</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Apply</a></li>
-  </ul>
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
 
-  <div class="cta">
-    <a href="#" class="btn">JOIN GUEST LIST</a>
+
+
+  <!-- Navbar with glass effect -->
+  <nav class="navbar glass-nav">
+    <div class="logo">
+      <img src="dugem-logos.png" alt="Forbidden Paradise">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="active magnetic">Home</a></li>
+      <li><a href="#experience" class="magnetic">Experience</a></li>
+      <li><a href="#rules" class="magnetic">Rules</a></li>
+      <li><a href="#gallery" class="magnetic">Gallery</a></li>
+      <li><a href="#apply" class="magnetic">Apply</a></li>
+    </ul>
+
+    <div class="cta">
+      <a href="#" class="btn btn-neon magnetic">
+        <span class="btn-text">JOIN GUEST LIST</span>
+        <span class="btn-glitch" data-text="JOIN GUEST LIST">JOIN GUEST LIST</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <!-- Animated Text Block -->
+      <div class="text-block">
+        <div class="strike-group">
+          <div class="strike-text" data-text="Dating app">
+            <span class="glitch-text">Dating app</span>
+          </div>
+          <div class="strike-text" data-text="Clubbing">
+            <span class="glitch-text">Clubbing</span>
+          </div>
+          <div class="strike-text" data-text="House Party">
+            <span class="glitch-text">House Party</span>
+          </div>
+        </div>
+
+        <div class="main-title">
+          <h1 class="title-3d">
+            <span class="word word-1" data-text="Forbidden">Forbidden</span>
+            <span class="word word-2" data-text="Paradise">Paradise</span>
+            <span class="checkmark">✔</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Tagline with typing effect -->
+      <div class="tagline-wrapper">
+        <p class="tagline">🖤 FORBIDDEN PARADISE</p>
+        <p class="tagline-sub">
+          <span class="typing-text"></span>
+          <span class="cursor-blink">|</span>
+        </p>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#events" class="cta-primary magnetic">
+          <span>Explore Events</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#gallery" class="cta-secondary magnetic">View Gallery</a>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-hint">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+        <div class="scroll-arrows">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side decorations -->
+    <div class="hero-decoration left-deco">
+      <div class="vertical-text">EST. 2024 • CHANDIGARH</div>
+    </div>
+    <div class="hero-decoration right-deco">
+      <div class="social-vertical">
+        <a href="#" class="social-link">IG</a>
+        <div class="social-line"></div>
+        <a href="#" class="social-link">TW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>🔥 EXCLUSIVE HOUSE PARTIES</span>
+        <span class="divider">★</span>
+        <span>✨ STRANGERS BECOME STORIES</span>
+        <span class="divider">★</span>
+        <span>🖤 CURATED EXPERIENCES</span>
+        <span class="divider">★</span>
+        <span>🎵 CHANDIGARH'S BEST KEPT SECRET</span>
+        <span class="divider">★</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>🔥 EXCLUSIVE HOUSE PARTIES</span>
+        <span class="divider">★</span>
+        <span>✨ STRANGERS BECOME STORIES</span>
+        <span class="divider">★</span>
+        <span>🖤 CURATED EXPERIENCES</span>
+        <span class="divider">★</span>
+        <span>🎵 CHANDIGARH'S BEST KEPT SECRET</span>
+        <span class="divider">★</span>
+      </div>
+    </div>
   </div>
-</nav>
-
- <div class="container">
-    <div class="strike-text">
-      <span>Dating app</span>
-    </div>
-    <div class="strike-text">
-      <span>Clubbing</span>
-    </div>
-    <div class="strike-text">
-      <span>House Party</span>
-    </div>
-    <div class="final-text">
-      <span class="white">Forbidden</span>
-      <span class="red">Paradise</span>
-      <span class="check">✔</span>
-    </div>
-
-    <div class="maindiv">
-      <div class="tt">🖤 FORBIDDEN PARADISE</div>
-      <div class="tt"> Most curated house party experience</div>
-      
-    </div>
 
 
-
-    <div class="marquee">
-      <div class="marquee-text"> 🔥 Welcome to Forbidden Paradise - Chandigarh's Private Party Experience 🔥 </div>
+  <section class="HH">
+    <h1 class="title">
+      The party don't stop, Till the casket drop.
+    </h1>
+    <div class="stats">
+      <div class="left">
+        <p>15+ Events Hosted</p>
+        <p>100% Vibe Rate</p>
+      </div>
+      <div class="right">
+        <p>500+ Strangers connected</p>
+        <p>No Boring Moments</p>
+      </div>
     </div>
+  </section>
 
- 
-<section class="HH">
-  <h1 class="title">
-    The party don't stop, Till the casket drop.
-  </h1>
-  <div class="stats">
-    <div class="left">
-      <p>15+ Events Hosted</p>
-      <p>100% Vibe Rate</p>
-    </div>
-    <div class="right">
-      <p>500+ Strangers connected</p>
-      <p>No Boring Moments</p>
-    </div>
-  </div>
-</section>
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <p class="subtitle">Now you can attend these nights worth vibe</p>
 
-<section class="events">
-  <h2>Upcoming Events</h2>
-  <p class="subtitle">Now you can attend these nights worth vibe</p>
-
-  <div class="table">
-    <div class="row">
-      <div class="date">DATE</div>
+    <div class="table">
+      <div class="row">
+        <div class="date">DATE</div>
         <div class="artist">ARTIST</div>
         <div class="event">EVENTS</div>
         <div class="actions">
           TICKETS
-          
+
         </div>
+      </div>
     </div>
-  </div>
-      <div class="row">
+    <div class="row">
       <div class="date">15/02/2026</div>
 
       <div class="artist">
-        <img src="images/dj2.jpg">
+        <img src="d1.png">
         <span>DJ vibes & The Crew</span>
       </div>
 
-      <div class="event">Lipstick  &  Champagne</div>
+      <div class="event">Lipstick & Champagne</div>
 
       <div class="actions">
         <button class="outline">BOOK</button>
         <button class="primary">BUY TICKET</button>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="date">28/02/2026</div>
 
       <div class="artist">
-        <img src="images/dj2.jpg">
+        <img src="d2.png">
         <span>Underground Collective</span>
       </div>
 
@@ -115,11 +214,11 @@
         <button class="primary">BUY TICKET</button>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="date">15/03/2026</div>
 
       <div class="artist">
-        <img src="images/dj2.jpg">
+        <img src="d3.png">
         <span>Forbidden Paradise</span>
       </div>
 
@@ -130,249 +229,313 @@
         <button class="primary">BUY TICKET</button>
       </div>
     </div>
-</section>
-
-<div class="wrapper">
-  <div class="dj"><img src="other.jfif" alt="dj image"></div>
-
-<div class="content">
-  <span class="badge">Exclusive</span>
-  <h1>Not a club.<br>Not a dating app.<br>Not your regular weekend.</h1>
-  <p>Forbidden Paradise is a community-driven party experience where strangers connect, conversations spark, and memories get made naturally. We host curated house parties, themed nights, fun games, music-driven energy, and vibe-heavy gatherings for people who are tired of boring weekends and dead group chats.</p>
-  <br>
-  <span class="badge">Explore More</span><br>
-  👉 Come for the vibe. Stay for the plot twist.
-
-</div>
-</div>
-
- <div class="marquee">
-      <div class="marquee-text"> 🔥 WELCOME TO MY HOUSE PARTY 🔥 HOUSE PARTY BY THE FORBIDDEN PARADISE.🔥 </div>
-    </div>
-
-   <section class="events">
-    <div class="vibe-container">
-        <div class="vibe-left">
-        <h2>The Vibe Rules.</h2>
-        <p class="subtitle">Simple guidelines for an unforgettable night.</p>
-
-        <div class="rules">
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-          <div class="rule-card">
-            <span class="number">01</span>
-            <h3>Be present.</h3>
-            <p>Put your phone away. The best moments aren't for Instagram.</p>
-          </div>
-        </div>
-      </div>
   </section>
 
-  <div class="stranger">
-      <p>YOU ENTER AS A STRANGER. YOU LEAVE AS A STORY </p>
-    </div>
-    
+  <div class="wrapper">
+    <div class="dj"><img src="other.jfif" alt="dj image"></div>
 
-    <section class="gallery-section">
+    <div class="content">
+      <span class="badge">Exclusive</span>
+      <h1>Not a club.<br>Not a dating app.<br>Not your regular weekend.</h1>
+      <p>Forbidden Paradise is a community-driven party experience where strangers connect, conversations spark, and
+        memories get made naturally. We host curated house parties, themed nights, fun games, music-driven energy, and
+        vibe-heavy gatherings for people who are tired of boring weekends and dead group chats.</p>
+      <br>
+      <span class="badge">Explore More</span><br>
+      👉 Come for the vibe. Stay for the plot twist.
+
+    </div>
+  </div>
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content"> 🔥 WELCOME TO MY HOUSE PARTY 🔥 HOUSE PARTY BY THE FORBIDDEN PARADISE.🔥 </div>
+  </div>
+  </div>
+
+
+  <div class="stranger">
+    <p>YOU ENTER AS A STRANGER. YOU LEAVE AS A STORY </p>
+  </div>
+
+
+  <section class="gallery-section">
     <h1 class="title2">Past Vibes</h1>
     <p class="subtitle2">A glimpse into what you're missing.</p>
-     <div class="gallery">
+    <div class="gallery">
       <div class="card">
-        <img src="card1.jpg" alt="">
-         <div class="label">Games timeee</div>
+        <img src="image6.jfif" alt="">
+        <div class="label">Games timeee</div>
       </div>
       <div class="card">
-        <img src="card2.jpg" alt="">
+        <img src="image3.jfif" alt="">
         <div class="label">Connections Made</div>
       </div>
       <div class="card">
-        <img src="card3.jpg" alt="">
+        <img src="image1.jfif" alt="">
         <div class="label">The Dance Floor</div>
       </div>
       <div class="card">
-        <img src="card4.jpg" alt="">
+        <img src="image5.jfif" alt="">
         <div class="label">Neon Lights</div>
       </div>
       <div class="card">
-        <img src="card5.jpg" alt="">
-        <div class="label">Dance & Drinks</div>
+        <img src="image2.jfif" alt="">
+        <div class="label">Dance Dance</div>
       </div>
       <div class="card">
-        <img src="card6.jpg" alt="">
-        <div class="label">Watching timeee</div>
+        <img src="image4.jfif" alt="">
+        <div class="label">Drinkss</div>
       </div>
     </div>
   </section>
 
   <section class="inside">
-    <h1 class="title3">What happens inside</h1>
-    <p class="subtitle3">House parties where the real magic happens.</p>
+    <h1 class="title2">What happens inside</h1>
+    <p class="subtitle2">House parties where the real magic happens.</p>
 
     <div class="row">
       <div class="artist">
-        <img src="ima">
+        <img src="p1.png">
         <span>The Playlist</span>
       </div>
-      <div class="event">Hits harder than your ex</div> 
+      <div class="event">Hits harder than your ex</div>
     </div>
     <div class="row">
       <div class="artist">
-        <img src="ima">
+        <img src="p2.png">
         <span>Real Connections</span>
       </div>
-      <div class="event">Conversations starts with eye contacts</div> 
+      <div class="event">Conversations starts with eye contacts</div>
     </div>
     <div class="row">
       <div class="artist">
-        <img src="ima">
+        <img src="p3.png">
         <span>Competitive Games</span>
       </div>
-      <div class="event">Games get competitive</div> 
+      <div class="event">Games get competitive</div>
     </div>
     <div class="row">
       <div class="artist">
-        <img src="ima">
+        <img src="p4.png">
         <span>Dangerous Vibes</span>
       </div>
-      <div class="event">Vibes get dangerous (in a good way)</div> 
+      <div class="event">Vibes get dangerous (in a good way)</div>
     </div>
   </section>
 
-<section class="who-section">
- <h2>Who is this for?</h2>
- <p>If you get the culture — you'll fit right in.</p>
-<div class="carousel">
-  <div class="track">
-    
-    <div class="slide active">
-      <img src="cr1.jpg">
-      <div class="overlay">
-        <span class="pill">Singles</span>
-        <h3>Singles who want real connections not swipes.</h3>
-      </div>
-    </div>
-     <div class="slide active">
-      <img src="cr2.jpg">
-      <div class="overlay">
-        <span class="pill">Couples</span>
-        <h3>Couples who want escape from routine.</h3>
-      </div>
-    </div>
-     <div class="slide active">
-      <img src="cr3.jpg">
-      <div class="overlay">
-        <span class="pill">Creatives</span>
-        <h3>Creatives, professionals, founders, artists</h3>
-      </div>
-    </div>
-     <div class="slide active">
-      <img src="cr4.jpg">
-      <div class="overlay">
-        <span class="pill">Music lover</span>
-        <h3>People with good energy and better experience.</h3>
-      </div>
-    </div>
-     <div class="slide active">
-      <img src="cr5.jpg">
-      <div class="overlay">
-        <span class="pill">Vibe Seekers</span>
-        <h3>Anyone who values vibe over validation.</h3>
+  <section class="who-section">
+    <h2>Who is this for?</h2>
+    <p>If you get the culture — you'll fit right in.</p>
+    <div class="carousel">
+      <div class="track">
+
+        <div class="slide active">
+          <img src="cr1.jpg">
+          <div class="overlay">
+            <span class="pill">Singles</span>
+            <h3>Singles who want real connections not swipes.</h3>
+          </div>
+        </div>
+        <div class="slide active">
+          <img src="cr2.jpg">
+          <div class="overlay">
+            <span class="pill">Couples</span>
+            <h3>Couples who want escape from routine.</h3>
+          </div>
+        </div>
+        <div class="slide active">
+          <img src="cr3.jpg">
+          <div class="overlay">
+            <span class="pill">Creatives</span>
+            <h3>Creatives, professionals, founders, artists</h3>
+          </div>
+        </div>
+        <div class="slide active">
+          <img src="cr4.jpg">
+          <div class="overlay">
+            <span class="pill">Music lover</span>
+            <h3>People with good energy and better experience.</h3>
+          </div>
+        </div>
+        <div class="slide active">
+          <img src="cr5.jpg">
+          <div class="overlay">
+            <span class="pill">Vibe Seekers</span>
+            <h3>Anyone who values vibe over validation.</h3>
+          </div>
+        </div>
+
       </div>
     </div>
 
-     </div>
- </div>
-
- <div class="dots">
- <span class="dot active" data-index="0"></span>
- <span class="dot" data-index="1"></span>
- <span class="dot" data-index="2"></span>
- <span class="dot" data-index="3"></span>
- <span class="dot" data-index="4"></span>
-</div>
-</section>
-<section class="got">
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+    </div>
+  </section>
+  <section class="got">
     <h1 class="title3">Got Questions?</h1>
     <p class="subtitle3">We've got cheeky answers.</p>
     <div class="faq-wrap">
 
-  <div class="faq-box">
-    <span>Is this a dating event?</span>
-    <i>+</i>
-  </div>
+      <div class="faq-box">
+        <span>Is this a dating event?</span>
+        <i>+</i>
+      </div>
 
-  <div class="faq-box">
-    <span>Can I bring a friend?</span>
-    <i>+</i>
-  </div>
+      <div class="faq-box">
+        <span>Can I bring a friend?</span>
+        <i>+</i>
+      </div>
 
-  <div class="faq-box">
-    <span>What should I wear?</span>
-    <i>+</i>
-  </div>
+      <div class="faq-box">
+        <span>What should I wear?</span>
+        <i>+</i>
+      </div>
 
-  <div class="faq-box">
-    <span>What if I'm awkward at parties?</span>
-    <i>+</i>
-  </div>
+      <div class="faq-box">
+        <span>What if I'm awkward at parties?</span>
+        <i>+</i>
+      </div>
 
-  <div class="faq-box">
-    <span>How much does it cost?</span>
-    <i>+</i>
-  </div>
+      <div class="faq-box">
+        <span>How much does it cost?</span>
+        <i>+</i>
+      </div>
 
-</div>
-</section>
-<section class="got2">
-   <h2 class="title4">Starting from Chandigarh</h2>
+    </div>
+  </section>
+  <section class="got2">
+    <h2 class="title4">Starting from Chandigarh</h2>
     <p class="subtitle3">Private Location.House party setup.Themed Experience</p>
-     <div class="stranger">
+    <div class="stranger">
       <p>Details shared only with confirmed guests. </p>
     </div>
 
-</section>
-<section class="got3">
-  <h2 class="title4">Friendly Warning</h2>
-  <p class="subtitle3">You Might:</p>
-  <ul class="info-list">
-    <li>Stay longer than planned</li>
-    <li>Meet people you weren't expecting</li>
-    <li>Forget your Sunday anxiety</li>
-    <li>Actually enjoy socializing again</li>
-  </ul>
+  </section>
+  <section class="got3">
+    <h2 class="title4">Friendly Warning</h2>
+    <p class="subtitle3">You Might:</p>
+    <ul class="info-list">
+      <li>Stay longer than planned</li>
+      <li>Meet people you weren't expecting</li>
+      <li>Forget your Sunday anxiety</li>
+      <li>Actually enjoy socializing again</li>
+    </ul>
 
-  <p class="note">
-    We are not responsible for your new favourite weekend habit.
-  </p>
-</section>
+    <p class="note">
+      We are not responsible for your new favourite weekend habit.
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+
+    <div class="footer-container">
+      <!-- Top Section -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="dugem-logos.png" alt="Forbidden Paradise Logo" class="footer-logo">
+          <p class="footer-tagline">Where strangers become stories.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter/X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                </path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Experience</a></li>
+              <li><a href="#">Rules</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Events</h4>
+            <ul>
+              <li><a href="#">Upcoming Parties</a></li>
+              <li><a href="#">Past Vibes</a></li>
+              <li><a href="#">Book Tickets</a></li>
+              <li><a href="#">VIP Access</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Join Guest List</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Partner With Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Join the Inner Circle</h4>
+          <p>Get first access to events, secret locations & exclusive vibes.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">🔥</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Forbidden Paradise. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <p class="footer-love">Made with 🖤 in Chandigarh</p>
+      </div>
+    </div>
+  </footer>
 
 
 
+  <script src="index.js"></script>
+</body>
 
-
-   <script src="index.js"></script>       
-  </body>
 </html>
