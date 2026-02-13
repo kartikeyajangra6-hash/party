@@ -26,11 +26,23 @@ html {
 }
 
 body {
-  font-family: 'Outfit', 'Poppins', sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif;
   background: var(--dark);
   color: var(--text);
   overflow-x: hidden;
+  font-weight: 300;
 
+}
+button, .cta, .btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  
+}
+h1, h2, h3 {
+  font-weight: 500;
+}
+p, span, a {
+  font-weight: 300;
 }
 
 
@@ -52,9 +64,9 @@ body {
   top: -50%;
   left: -50%;
   background:
-    radial-gradient(circle at 20% 80%, rgba(255, 77, 77, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 106, 43, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(255, 77, 77, 0.22) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 106, 43, 0.22) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(0, 255, 255, 0.18) 0%, transparent 50%),
     linear-gradient(180deg, #000 0%, #0a0505 50%, #000 100%);
   animation: gradientMove 20s ease infinite;
 }
@@ -205,19 +217,7 @@ body {
     transform: translateY(-100px) rotate(720deg);
     opacity: 0;
   }
-}
 
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  padding: 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  transition: all 0.4s ease;
 }
 
 .glass-nav {
@@ -225,6 +225,11 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  position: relative;
 }
 
 .navbar.scrolled {
@@ -253,6 +258,9 @@ body {
   list-style: none;
   display: flex;
   gap: 40px;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
 }
 
 .nav-links li a {
@@ -390,6 +398,8 @@ body {
 /* Strike text group */
 .strike-group {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .strike-text {
@@ -496,7 +506,7 @@ body {
 
 .title-3d {
   font-size: clamp(48px, 8vw, 80px);
-  font-weight: 800;
+  font-weight: 500;
   font-style: italic;
   line-height: 1.1;
 }
@@ -902,6 +912,8 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
 }
 
@@ -923,6 +935,8 @@ body {
   margin-bottom: 80px;
   color: var(--gold);
   text-shadow: 0 0 40px rgba(222, 184, 135, 0.3);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .stats {
@@ -932,6 +946,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  font-family: 'Inter', sans-serif;
+  
 }
 
 .left,
