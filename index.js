@@ -18,7 +18,7 @@ class ParticleSystem {
 
     // Random properties
     const size = Math.random() * 5 + 2;
-    const colors = ['#ff4d4d', '#ff6a2b', '#ff8040', '#00ffff', '#ffffff'];
+    const colors = ['#ff4d4d', '#ff6a2b', '#ff8040', '#00ffff', '#ffffff', '#8b5cf6', '#ff2d95'];
     const color = colors[Math.floor(Math.random() * colors.length)];
 
     Object.assign(particle.style, {
@@ -170,7 +170,7 @@ class MagneticEffect {
 class ScrollEffects {
   constructor() {
     this.navbar = document.querySelector('.navbar');
-    this.revealElements = document.querySelectorAll('.HH, .events, .wrapper, .vibe-container, .gallery-section, .who-section, .got, .got2, .got3, .inside');
+    this.revealElements = document.querySelectorAll('.HH, .events, .wrapper, .vibe-container, .gallery-section, .who-section, .got, .got2, .got3, .inside, .container, .stranger');
 
     this.init();
   }
@@ -183,8 +183,18 @@ class ScrollEffects {
       }
     });
 
-    // Scroll reveal
-    this.revealElements.forEach(el => el.classList.add('scroll-reveal'));
+    // Scroll reveal with directional variants
+    this.revealElements.forEach((el, i) => {
+      el.classList.add('scroll-reveal');
+      // Alternate reveal directions for visual variety
+      if (el.classList.contains('wrapper') || el.classList.contains('container')) {
+        el.classList.add('reveal-scale');
+      } else if (i % 3 === 1) {
+        el.classList.add('reveal-left');
+      } else if (i % 3 === 2) {
+        el.classList.add('reveal-right');
+      }
+    });
 
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -192,7 +202,7 @@ class ScrollEffects {
           entry.target.classList.add('revealed');
         }
       });
-    }, { threshold: 0.1, rootMargin: '-50px' });
+    }, { threshold: 0.08, rootMargin: '-30px' });
 
     this.revealElements.forEach(el => this.observer.observe(el));
 
@@ -204,6 +214,51 @@ class ScrollEffects {
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+      });
+    });
+  }
+}
+
+// ========== SECTION GLOW EFFECT ==========
+class SectionGlowEffect {
+  constructor() {
+    this.sections = document.querySelectorAll('.HH, .events, .inside, .got, .gallery-section');
+    this.init();
+  }
+
+  init() {
+    this.sections.forEach(section => {
+      const glowEl = document.createElement('div');
+      glowEl.style.cssText = `
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 77, 77, 0.06) 0%, rgba(168, 85, 247, 0.04) 30%, transparent 70%);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        filter: blur(40px);
+      `;
+      if (!section.style.position || section.style.position === 'static') {
+        section.style.position = 'relative';
+      }
+      section.style.overflow = 'hidden';
+      section.appendChild(glowEl);
+
+      section.addEventListener('mousemove', (e) => {
+        const rect = section.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        glowEl.style.left = x + 'px';
+        glowEl.style.top = y + 'px';
+        glowEl.style.opacity = '1';
+      });
+
+      section.addEventListener('mouseleave', () => {
+        glowEl.style.opacity = '0';
       });
     });
   }
@@ -357,11 +412,35 @@ class CounterAnimation {
   }
 }
 
+// ========== FAQ TOGGLE ==========
+class FAQToggle {
+  constructor() {
+    this.items = document.querySelectorAll('.faq-item');
+    if (this.items.length) this.init();
+  }
+
+  init() {
+    this.items.forEach(item => {
+      const box = item.querySelector('.faq-box');
+      if (box) {
+        box.addEventListener('click', () => {
+          // Close other open items
+          this.items.forEach(other => {
+            if (other !== item) other.classList.remove('open');
+          });
+          // Toggle current
+          item.classList.toggle('open');
+        });
+      }
+    });
+  }
+}
+
 // ========== INIT ALL ==========
 document.addEventListener('DOMContentLoaded', () => {
-  // Particles
+  // Particles (more for a richer effect)
   const particleContainer = document.getElementById('particles');
-  if (particleContainer) new ParticleSystem(particleContainer, 50);
+  if (particleContainer) new ParticleSystem(particleContainer, 65);
 
   // Custom cursor
   new CustomCursor();
@@ -383,6 +462,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Scroll effects
   new ScrollEffects();
 
+  // Section glow effect
+  new SectionGlowEffect();
+
   // Tilt effect
   new TiltEffect();
 
@@ -394,6 +476,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Counter animation
   new CounterAnimation();
+
+  // FAQ toggle
+  new FAQToggle();
 });
 
 // Re-initialize on load
